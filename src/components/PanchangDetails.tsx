@@ -126,7 +126,7 @@ export function PanchangDetails({
   }, [date, holidays]);
 
   return (
-    <Card className="p-4 md:p-6 space-y-2">
+    <Card className="p-4 md:p-6 space-y-2 bg-primary border-primary text-background">
       <div className="space-y-1">
         <h3 className="text-xl md:text-2xl font-semibold">
           {date.toLocaleDateString("en-IN", {
@@ -146,7 +146,7 @@ export function PanchangDetails({
         </h1>
       </div>
 
-      <Separator />
+      <Separator className="bg-background" />
 
       <div className="space-y-2">
         <h3 className="text-xl font-semibold">Panchang</h3>
